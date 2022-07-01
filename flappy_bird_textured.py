@@ -36,6 +36,16 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
+            #CASOS DE PRUEBA
+                
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_UP:
+                    print (f"El objeto responde a esta tecla")
+                if event.key == pygame.K_RIGHT:
+                    print (f"El objeto responde a esta tecla")
+                if event.key == pygame.K_LEFT:
+                    print (f"El objeto responde a esta tecla")
+                    
             if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_SPACE:
                         speed += jump
